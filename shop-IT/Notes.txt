@@ -1,0 +1,20 @@
+
+
+// shopIT
+
+
+ 1. PriceMatrix  : getPrice(item)      - dependency
+ 2. Billing      : getTotalPrice(cart) - dependent
+ 
+ 
+ 
+ 
+ 
+ OO principles
+ ---------------
+   
+   -> Single Responsiblity
+   -> Open for extension * closed for modification'
+   -> Loose Coupling
+   -> Inversion of Control 
+   -> Dependency Injection 
