@@ -1,0 +1,29 @@
+
+
+
+
+
+entity relationship
+--------------------
+
+  -> uni-  
+  -> bi-
+  
+  
+  associations
+  
+   ->  1-1
+   ->  1-M
+   ->  M-1
+   ->  M-M
+   
+   
+   -------------------------------
+   
+   how to implement entity relationship in relational-model ?
+   
+   
+   --> using joinColumn
+   --> using joinTable
+   
+   ------------------------------

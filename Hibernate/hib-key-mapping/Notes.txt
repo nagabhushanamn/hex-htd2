@@ -1,0 +1,10 @@
+
+
+
+
+Hibernate Mapping
+------------------
+
+
+ --> simple type mapping  ( primitives , string , enum , lob , date )
+ --> primary-key mapping
