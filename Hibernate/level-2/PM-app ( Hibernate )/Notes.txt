@@ -1,0 +1,8 @@
+
+
+
+Hibernate Entity- state/Lifecycle
+---------------------------------
+
+https://i.stack.imgur.com/61dYc.png
+
