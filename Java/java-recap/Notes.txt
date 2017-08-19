@@ -1,0 +1,15 @@
+
+
+
+java-project
+-----------------
+
+
+
+ my-module
+ 
+ 
+ Top-Level    :  Interface 
+ Middle-Level :  Partial-Implementation ( Abstract-class )  ==> optional 
+ Bottom-Level : Implementation(s)  ( class )
+                

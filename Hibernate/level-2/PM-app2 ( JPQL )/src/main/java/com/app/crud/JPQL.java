@@ -99,16 +99,29 @@ public class JPQL {
 		// -----------------------------------------------------
 
 		// String jpql = "from Product p where p.company is not null";
-		String jpql = "from Product p where p.company.name='Abc Pvt Ltd'";
-		Query query = em.createQuery(jpql);
-		List<Product> list = query.getResultList();
-		for (Product product : list) {
-			System.out.println(product);
-		}
+		// String jpql = "from Product p where p.company.name='Abc Pvt Ltd'";
+		// Query query = em.createQuery(jpql);
+		// List<Product> list = query.getResultList();
+		// for (Product product : list) {
+		// System.out.println(product);
+		// }
+		//
+		// em.getTransaction().commit();
+		// em.close();
+		// emf.close();
 
-		em.getTransaction().commit();
-		em.close();
-		emf.close();
+		// -----------------------------------------------------
+
+		// Query query = em.createNamedQuery("findAll");
+		// List<Product> list = query.getResultList();
+		// for (Product product : list) {
+		// System.out.println(product);
+		// }
+		//
+		// em.getTransaction().commit();
+		// em.close();
+		// emf.close();
+		//
 
 	}
 

@@ -14,7 +14,7 @@ import com.app.model.Product;
  *  in hibernate , we can select data in 4 ways
  *  
  *  --> by primary key  ( session.get() | session.load() )
- *  --> by JPQL ( Hibernate Query Lang )
+ *  --> by HQL/JPQL ( Hibernate Query Lang )
  *  --> by criteria API ( for dynamic/complex queries )
  *  --> Native SQL
  * 

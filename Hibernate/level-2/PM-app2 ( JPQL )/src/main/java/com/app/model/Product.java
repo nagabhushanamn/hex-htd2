@@ -3,10 +3,15 @@ package com.app.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "PRODUCTS", schema = "pm")
+@NamedQueries({
+	@NamedQuery(name="findAll",query="from Product p")
+})
 public class Product {
 
 	@Id
