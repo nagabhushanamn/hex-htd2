@@ -1,0 +1,67 @@
+
+
+---------------------------
+  // Request Mapping
+  // Controller
+  -------------------------
+  
+  
+  4 ways , to map http-request to handler(controller)
+  
+  
+  // by path
+  
+  // by method
+  // bt presence/absence of req-params
+  // by presence/absence of req-headers
+  
+  --------------------------------------------------------------
+  
+  
+  
+  // Possible Args to RequestMapping' methods
+  
+  
+  -> @RequestParam
+  -> @@RequestHeader
+  -> @PathVariable
+  -> @ModelAttribute
+  -> BindingResult/Errors
+  -> Model
+  -> Map
+  -> @RequestBody
+  -> HttpServletRequest | HttpServletResponse | HttpSession  ( servlet API )
+  -> Principal  
+  -> Locale
+  
+ 
+  
+  Spring MVC Validation
+  
+  
+   2 ways
+   
+   --> Using Custom Validator component
+   -- using JSR-303 Standard Validation API
+   
+   
+   ---------------------------------------------------
+   
+   Exception Handling
+   -------------------
+   
+   many ways
+   
+   
+   way-1:
+   
+   @ExceptionHandler  in controller
+   
+  
+  
+  
+  
+  
+  
+  
+  
