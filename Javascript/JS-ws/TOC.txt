@@ -1,0 +1,7 @@
+
+
+1. data-types
+
+2. execution-context/scope - chain
+3. functions
+4. closures
