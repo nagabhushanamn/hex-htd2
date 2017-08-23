@@ -7,5 +7,5 @@ for (var i = 0; i < 2; i++) {
 }
 
 
-array[0]();
-array[1]();
+array[0]();  // 0
+array[1]();  // 1

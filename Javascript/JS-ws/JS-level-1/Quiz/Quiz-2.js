@@ -1,10 +1,9 @@
 
 
 function getFood() {
-    return
-    {
+    return{
         name: 'Idly, Vada'
     }
 }
 
-console.log(getFood().name);
+console.log(getFood().name)
