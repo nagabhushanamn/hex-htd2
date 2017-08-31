@@ -1,0 +1,45 @@
+
+
+
+New Syntax
+-------------
+
+basic Syntax
+---------------
+
+    1. let & const keywords with block-scope
+    2. function default params
+    3. function rest param
+    4. arrow functions
+    5. spread operator
+    6. destructuring
+    7. Iterable objects
+    8. generator function
+    9. for-of loop
+    10. symbol data-type
+    11. string/template interpolation
+
+OO syntax
+----------
+
+    1. OO with class 
+
+Module standard
+---------------
+
+   1. ES6 Modules
+
+Async Programming
+-----------------
+
+   1. Promise API
+   2. RxJS ( future proposal )
+      
+Collections
+-------------
+
+   1. Set
+   2. Map
+
+New standard APIs
+

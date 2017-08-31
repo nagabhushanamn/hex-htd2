@@ -77,6 +77,7 @@ How to run .js programs ?
      5. inheritance using prototypes
      6. object adv concepts
      7. closures - depth
+     
      8. ES6 / ES7 New features
      9. JS-modules
      10. JS concurrenct model with Event-Loop

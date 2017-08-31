@@ -77,6 +77,9 @@ let e = { name: 'Kannan' };
 
 // greetLib.sayName();
 
+
+// bind & invoke once  ( eager )
+
 // // way-1
 // greetLib.sayName.call(p,"Hello","AP");
 // greetLib.sayName.call(e,"Hey","TN");
@@ -85,6 +88,8 @@ let e = { name: 'Kannan' };
 // greetLib.sayName.apply(p,["Hello","AP"]);
 // greetLib.sayName.apply(e,["Hey","TN"]);
 
+
+// bind once , and call later as many times
 
 // way-3
 // let personSayNameFunc = greetLib.sayName.bind(p, "Hello", "AP");
