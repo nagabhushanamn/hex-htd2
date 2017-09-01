@@ -1,10 +1,11 @@
 
-
+ES6 - New Features
+-------------------
 
 New Syntax
 -------------
 
-basic Syntax
+1.basic Syntax
 ---------------
 
     1. let & const keywords with block-scope
@@ -18,8 +19,9 @@ basic Syntax
     9. for-of loop
     10. symbol data-type
     11. string/template interpolation
+    12. obj-literal enhancement
 
-OO syntax
+2.OO syntax
 ----------
 
     1. OO with class 
@@ -42,4 +44,6 @@ Collections
    2. Map
 
 New standard APIs
+
+
 
