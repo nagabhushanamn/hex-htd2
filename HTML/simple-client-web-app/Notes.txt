@@ -1,0 +1,94 @@
+
+
+
+client(browser) web-app
+--------------------------
+
+ 1. HTML
+ 
+ 
+ ------------------------------------------------
+ 
+ how to select html elements to apply style ?
+ 
+ many ways
+ 
+ --> by element name
+ --> by element's id
+ --> by elements class-name
+ --> by element relationship | position | etc....
+ 
+ 
+ 
+ how to apply css to html eleemnts ?
+ 
+ 3 ways
+ 
+ --> inline style
+ --> internal style
+ --> external style-sheet
+ 
+ 
+ 
+ ------------------------------------------------
+ 
+ 
+ what .js can do on HTML-page in browser-envi ?
+ 
+   -> using browser provided Web APIs, can do any dynamic activity on page
+   
+   browser provided APIs ==> w3c recommendations
+   
+   e.g  DOM, XHR , Time APIS  
+   
+   
+   browsers internally implemented these APIs and abstracted as .js obj & functions.
+ 
+ using DOM API
+ ----------------	
+  --> can create,retrieve,update,delete HTML elements
+  --> can change element's text/html content
+  --> can change element's attribute/property
+  --> can change element's style
+  --> can listen event(s) on any element
+  --> can validate form-fields before submit
+  --> can create RICH UI components
+  --> .........
+  
+  using XHR API
+  --------------
+  --> can send async http request to server , update resp in existing page with re-loading  ( AJAX )
+  
+  using Timer API
+  ----------------
+  --> can do timer actions ( timeoout , interval )
+  
+  
+  HTML5 APIs
+  --------------
+  
+  ref:
+  
+  -> https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+  
+  
+  -------------------------------------------------
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

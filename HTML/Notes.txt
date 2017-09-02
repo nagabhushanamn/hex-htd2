@@ -1,0 +1,14 @@
+
+
+
+web-application
+
+client(browser) <--------------> web-server
+
+
+
+
+       
+
+
+    
