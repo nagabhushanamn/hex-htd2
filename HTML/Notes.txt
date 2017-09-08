@@ -1,14 +1,37 @@
 
 
 
-web-application
+ .js-lang 
 
-client(browser) <--------------> web-server
+   --> single-threaded lang , can do concurrent actions
+   --> all IO operations are Non-Blocking
+
+   ------------------------------------------
 
 
+   browser  e.g chrome
+
+   ---------------------------------------------------
+
+    a. JS-Engine/Runtime  ( v8 )  : ( based on ECMAScript spec )
+
+         1. single-call-stack  ==> to execute js-contexts
+         2. heap               ==> to hold objects
 
 
-       
+    b.  Web APIs                   : ( based on w3c recommendations)
 
+        e.g DOM , XHR , Timer , HTML5 APIs ....
+
+
+    c. Event-Queue
+
+    d. Event-Loop
+
+   -------------------------------------------------------
+   
+
+
+   
 
     

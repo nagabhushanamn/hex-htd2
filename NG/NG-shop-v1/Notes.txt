@@ -1,0 +1,130 @@
+
+
+Angular Topics
+----------------
+
+
+===================================================
+
+ 1. data-binding
+ 
+   
+     4 types
+     --------
+     
+     a. interpolation binding
+     
+        comp's props  ===> comp's template
+        
+        syntax:
+        
+        in template --> {{ exporession }}
+        
+        
+     b. property/attribute binding
+     
+     	syntax:
+     	
+     	<element [prop]="expression" />
+     
+     
+     c. event binding 
+     
+        syntax:
+        
+        <element (event-name)="eventHandler($event)"/>
+           
+        
+===================================================
+
+2. directives
+
+
+   --> function/data to html with declarative syntax
+   
+   
+   3 types
+   ---------
+   
+      a. component directive
+      
+         ==> gives new UI to page
+      
+      b. structural directive
+   
+         ==> will change structure existing comp's template 
+   
+         e.g.  NgIf,NgFor,NgSwitch,.....
+   
+     c. attribute directives
+     
+        ==> will change element properties
+        
+         e.g NgClass
+     
+ ===================================================  
+ 
+ 
+ 3. Component's hierarchy  & data-flow
+ ------------------------------------------
+ 
+ 
+ 
+ 
+ e.g in plain-html
+ 
+ 
+ 
+   <html>
+   
+   	<head></head>
+   	
+   	<body>
+   	
+   		<form></form>
+   		
+   		<form></form>
+   		
+   	</body>
+   
+   </html>
+   
+   //---------------------------
+ 
+ 
+ e.g in ng-app
+ 
+ 
+  <root>
+  
+  	<child></child>
+  	<child></child>
+  
+  </root>
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
