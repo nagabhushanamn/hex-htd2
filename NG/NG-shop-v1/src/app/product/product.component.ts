@@ -1,4 +1,5 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {FormGroup, FormBuilder} from '@angular/forms';
 
 @Component({
   selector: 'app-product',
@@ -16,9 +17,17 @@ export class ProductComponent implements OnInit {
   @Output()
   buy = new EventEmitter();
 
-  constructor() {}
+  reviewForm: FormGroup;
+
+
+  constructor(private fb: FormBuilder) {}
 
   ngOnInit() {
+    this.reviewForm = this.fb.group({
+      stars: ['5'],
+      author: [''],
+      comment: ['']
+    });
   }
 
 
@@ -37,6 +46,11 @@ export class ProductComponent implements OnInit {
   handleBuyBtn() {
     console.log('emitting buy event');
     this.buy.emit(this.product);
+  }
+
+  submitNewReview(product) {
+    product.reviews.push(this.reviewForm.value);
+    this.reviewForm.reset();
   }
 
 }

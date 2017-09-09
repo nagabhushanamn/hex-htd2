@@ -47,7 +47,6 @@
  -------------------------------------------------------------------
  
  
- 
  3. Nested Components & Data-Flow
  
  e.g
@@ -57,6 +56,16 @@
    	 ProductList
    	 
    	   Product
+ 
+ 
+ -------------------------------------------------------------------
+ 
+ 4. Pipes
+ 
+ 
+    ==> to transform model properties for view-templates
+ 
+ 
  
  
  

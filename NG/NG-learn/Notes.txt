@@ -13,3 +13,61 @@ i.e
  		  ==> uni-directional data-flow
  		  
 ---------------------------------------------------------- 		  
+
+
+2. Handling Forms 
+-----------------
+
+
+
+
+   terminology
+   --------------
+   
+   a. FormControl  ==> any input-field in form
+   b. FormGroup    ==> group for form-controls & form-group
+   c. FormModel    ==> data obtained from form-group with form-controls
+   
+   -----------------------------
+   
+   
+   NG keeps 'FormGroup' or 'FormControl' in following states
+   
+   
+    - pristine
+    - dirty
+    
+    - valid
+    - errors
+    
+    - untouched
+    - touched
+    
+  ------------------------------------  
+     
+     
+     
+     how to validate form-controls ?
+     
+     
+     -> using HTML5 validation attributes
+     
+     		e.g
+     		
+     		required
+     		minlength
+     		pattern
+     		....
+     
+     -> using custom validation-functions
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    

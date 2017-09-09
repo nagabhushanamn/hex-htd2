@@ -8,15 +8,10 @@ import {Component} from '@angular/core';
 export class AppComponent {
 
   title = 'app';
-  totalCount = 0;
-
+  
   constructor() {
     console.log('AppComponent instantiated');
   }
 
-  inc(val) {
-    console.log('handling hit-event');
-    this.totalCount += Number.parseInt(val);
-  }
 
 }

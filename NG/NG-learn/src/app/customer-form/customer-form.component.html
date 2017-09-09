@@ -1,0 +1,70 @@
+
+<div class="row">
+	<div class="col-sm-6 col-md-6">
+	
+		<div class="panel panel-default">
+			
+			<div class="panel-heading">Customer Form</div>
+			<div class="panel-body">
+				
+				<form name="customerForm" #customerFormGroup="ngForm" (submit)="saveCustomer(customerFormGroup)">
+					<div class="form-group">
+						<label>First Name :</label> 
+						<input  class="form-control" 
+						        [ngModel]="customerModel.firstName" 
+						        (ngModelChange)="customerModel.firstName=$event"
+						        name="firstName" />
+					</div>
+					<div class="form-group" [class.has-error]="lastNameFormControl.invalid && lastNameFormControl.touched">
+						<label>Last Name :</label> 
+						<input  class="form-control" 
+						        [(ngModel)]="customerModel.lastName" 
+						        name="lastName" 
+						        required
+						        minlength="3"
+						        #lastNameFormControl="ngModel"
+						        />
+						 <div class="help-block" *ngIf="lastNameFormControl.invalid && lastNameFormControl.touched">
+						 	<!-- 
+						 	<span *ngIf="lastNameFormControl.errors.required">Last Name is Required</span>
+						 	<span *ngIf="lastNameFormControl.errors.minlength">Last Name  > 3 chars</span> 
+						 	-->
+						 </div>       
+					</div>
+					<div class="form-group">
+						<label>Email :</label> 
+						<input class="form-control">
+					</div>
+					<button class="btn">submit</button>
+				</form>
+				
+				FormGroup<br/>
+				<pre>
+					is pristine : {{customerFormGroup.pristine}}
+					is dirty    : {{customerFormGroup.dirty}}
+					
+					is valid    : {{customerFormGroup.valid}}
+					is invalid  : {{customerFormGroup.invalid}}
+					
+					is untouched: {{customerFormGroup.untouched}}
+					is touched  : {{customerFormGroup.touched}}
+					
+				</pre>			
+				FormControl ( lastName )<br/>
+				<pre>
+					is pristine : {{lastNameFormControl.pristine}}
+					is dirty    : {{lastNameFormControl.dirty}}
+					
+					is valid    : {{lastNameFormControl.valid}}
+					is invalid  : {{lastNameFormControl.invalid}}
+					
+					is untouched: {{lastNameFormControl.untouched}}
+					is touched  : {{lastNameFormControl.touched}}
+				</pre>				
+						
+				
+			</div>
+		</div>
+	</div>
+	
+</div>

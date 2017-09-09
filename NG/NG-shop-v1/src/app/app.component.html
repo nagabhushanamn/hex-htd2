@@ -1,9 +1,11 @@
 
 <div class="container">
 	<div class="page-header">{{title}}</div>
-	<span class="">{{cart.length}} in cart </span> | <a class="btn">View-Cart</a> | <a class="btn">View-Products</a>
+	<a class="btn" (click)="showCart(false)">View-Products</a> |
+	<a class="btn" (click)="showCart(true)">View-Cart <span class="badge">{{cart.length}}</span></a> | 
 	<hr/>
 	<div>
-		<app-product-list (buy)="addToCart($event)" [products]="products"></app-product-list>
+		<app-view-cart *ngIf="cartFlag" [products]="cart"></app-view-cart>
+		<app-product-list *ngIf="!cartFlag" (buy)="addToCart($event)" [products]="products"></app-product-list>
 	</div>
 </div>

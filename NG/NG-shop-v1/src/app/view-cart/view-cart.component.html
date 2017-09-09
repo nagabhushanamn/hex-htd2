@@ -1,0 +1,19 @@
+
+
+
+<div class="panel panel-default">
+	<div class="panel-heading">Items in cart</div>
+	<div class="panel-body">
+		{{products.length===0?' cart is empty ':''}}
+		<table class="table table-bordered">
+			<tr *ngFor="let product of products">
+				<td>{{product.id}}</td>
+				<td>{{product.name}}</td>
+				<td>{{product.price|currency:product.currency:true}}</td>
+			</tr>
+		</table>
+		<hr/>	
+		<a *ngIf="products.length!==0" class="btn btn-primary">Checkout</a>
+
+	</div>
+</div>

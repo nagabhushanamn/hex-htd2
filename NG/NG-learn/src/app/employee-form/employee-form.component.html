@@ -1,0 +1,67 @@
+
+<div class="row">
+	<div class="col-sm-6 col-md-6">
+	
+		<div class="panel panel-default">
+			
+			<div class="panel-heading">Employee Form</div>
+			<div class="panel-body">
+				
+				<form [formGroup]="employeeFormGroup">
+					<div class="form-group" 
+					     [class.has-error]="employeeFormGroup.get('firstName').invalid && employeeFormGroup.get('firstName').touched">
+						<label>First Name :</label> 
+						<input  class="form-control" formControlName="firstName"/>
+					</div>
+					<div class="form-group" >
+						<label>Last Name :</label> 
+						<input  class="form-control" formControlName="lastName"/>
+					</div>
+					
+					<div formGroupName="emailGroup" class="well">
+						<div class="form-group"
+						     [class.has-error]="employeeFormGroup.get('emailGroup.email').invalid && employeeFormGroup.get('emailGroup.email').touched">
+							<label>Email :</label> 
+							<input class="form-control" formControlName="email" placeholder="Email (required)">
+						</div>
+						<div class="form-group"
+						     [class.has-error]="employeeFormGroup.get('emailGroup.confirmEmail').invalid && employeeFormGroup.get('emailGroup.confirmEmail').touched">
+							<label>Confirm Email :</label> 
+							<input class="form-control" formControlName="confirmEmail" placeholder="Confirm Email (required)">
+						</div>
+						<!-- 
+							<div *ngIf="employeeFormGroup.get('emailGroup').errors?.match">
+								Emails dosnt match
+							</div> 
+						-->
+					</div>
+					
+					<div class="form-group"
+						 [class.has-error]="employeeFormGroup.get('mobile').invalid && employeeFormGroup.get('mobile').touched">
+						<label>Mobile :</label> 
+						<input class="form-control" formControlName="mobile" placeholder="">
+					</div>
+					<div class="form-group">
+						<label>Send Notification :</label> 
+						<input (click)="toggleNotification('email')" type="radio" formControlName="sendNotification" value="email"> &nbsp; Email
+						<input (click)="toggleNotification('sms')" type="radio" formControlName="sendNotification" value="sms"> &nbsp; SMS
+					</div>
+					<div class="">
+						<label>Send Catalog :</label> 
+						<input type="checkbox" class="" formControlName="sendCatalog">
+					</div>
+					<div class="form-group"
+					     [class.has-error]="employeeFormGroup.get('range').invalid && employeeFormGroup.get('range').touched">
+						<label>Range :</label> 
+						<input class="form-control" formControlName="range">
+					</div>
+					<hr/>
+					<button class="btn" (click)="loadEmployee()">Load Employee</button>
+					<button class="btn">submit</button>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+	
+</div>

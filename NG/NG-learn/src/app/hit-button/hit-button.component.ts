@@ -22,7 +22,6 @@ export class HitButtonComponent implements OnInit {
   }
 
   btnClickHandler() {
-    console.log('emitting hit-event');
     this.hit.emit(this.label);
   }
 

@@ -4,8 +4,8 @@
 	</div>
 	<div class="col-xs-9 col-sm-9 col-md-9">
 		<span class="badge">{{idx}}</span>
-		<h4>{{product.name}}</h4>
-		<h5>{{product.price}}</h5>
+		<h4>{{product.name | uppercase}}  <small>{{product.makeDate|date:'yyyy'}}</small></h4>
+		<h5>{{product.price|priceDiscount:product.discount|currency:product.currency:true}}</h5>
 		<button (click)="handleBuyBtn()" *ngIf="product.canBuy" class="btn btn-danger">Buy</button>
 		<hr />
 		<section>
@@ -17,7 +17,44 @@
 			</ul>
 			<div *ngIf="isTabSelected(1)" class="panel">{{product.description}}</div>
 			<div *ngIf="isTabSelected(2)" class="panel">Not Yet</div>
-			<div *ngIf="isTabSelected(3)" class="panel">None Yet</div>
+			<div *ngIf="isTabSelected(3)" class="panel">
+			
+				<div class="alert alert-danger" *ngFor="let review of product.reviews">
+					<span class="badge">{{review.stars}}</span> &mdash; {{review.author}}
+					<hr/>
+					<p>{{review.comment}}</p>
+				</div>
+			
+				<hr/>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">Review Form</div>
+					<div class="panel-body">
+					
+						<form [formGroup]="reviewForm" (submit)="submitNewReview(product)">
+						
+							<div class="form-group">
+								<label>stars</label>
+								<select class="form-control" formControlName="stars">
+									<option *ngFor="let n of [1,2,3,4,5]" [value]="n">{{n}}</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label>author</label>
+								<input class="form-control" formControlName="author">
+							</div>
+							<div class="form-group">
+								<label>comment</label>
+								<textarea class="form-control" formControlName="comment"></textarea>
+							</div>
+							<button class="btn">submit</button>
+						</form>
+					
+					</div>
+				</div>
+				
+			</div>
 		</section>
+		<!-- <pre>{{product|json}}</pre> --> 
 	</div>
 </div>
