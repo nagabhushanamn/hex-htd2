@@ -1,0 +1,19 @@
+
+
+<div class="panel panel-info">
+
+	<div class="panel-heading">AppComponent - {{totalCount}}</div>
+	<div class="panel-body">
+		<!-- 
+			<button (click)="inc(1)">+1</button>
+			<button (click)="inc(10)">+10</button>
+			<button (click)="inc(100)">+100</button> 
+		-->
+		<app-hit-button label="1" (hit)="inc($event)"></app-hit-button>
+		<app-hit-button label="10" (hit)="inc($event)"></app-hit-button>
+		<app-hit-button label="100" (hit)="inc($event)"></app-hit-button>
+		<hr />
+		<app-count-display [count]="totalCount"></app-count-display>
+	</div>
+
+</div>

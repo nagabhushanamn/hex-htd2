@@ -1,10 +1,10 @@
 {
-  "name": "ng-shop-v1",
+  "name": "ng-learn",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port=8181 --open",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

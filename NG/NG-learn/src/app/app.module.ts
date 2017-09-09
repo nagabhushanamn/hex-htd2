@@ -2,14 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductComponent } from './product/product.component';
+import { CountDisplayComponent } from './count-display/count-display.component';
+import { HitButtonComponent } from './hit-button/hit-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent,
-    ProductComponent
+    CountDisplayComponent,
+    HitButtonComponent
   ],
   imports: [
     BrowserModule

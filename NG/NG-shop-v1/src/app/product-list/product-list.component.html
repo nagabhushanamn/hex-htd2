@@ -1,0 +1,12 @@
+
+
+<div class="panel panel-primary">
+	<div class="panel-heading">All Products - {{products.length}}</div>
+	<div class="panel-body">
+		<div class="list-group">
+			<div *ngFor="let prod of products;let idx=index"class="list-group-item">
+				<app-product (buy)="handleBuy($event)" [product]="prod" [idx]="idx+1"></app-product>
+			</div>
+		</div>
+	</div>
+</div>

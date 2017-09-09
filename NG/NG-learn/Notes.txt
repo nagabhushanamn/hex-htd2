@@ -1,0 +1,15 @@
+
+
+
+
+ 1. Nested-Components & Uni-directional data-flow
+ 
+ from  Parent-Component	 to Child-Component	  		  
+ 		  --> input as props
+ from Child-Component  to Parent-Component
+ 		  --> output as events
+ 		  
+i.e 		  
+ 		  ==> uni-directional data-flow
+ 		  
+---------------------------------------------------------- 		  

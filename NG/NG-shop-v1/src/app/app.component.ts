@@ -7,38 +7,32 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'shopIT';
+  // properties
+
+  title = 'shop-IT';
+
+  cart: Array<any> = []
 
   products = [
     {
       name: 'Laptop',
-      price: 198000,
+      price: 120000,
       description: 'New Model',
       canBuy: true,
       image: 'images/Laptop.png'
     },
     {
       name: 'Mobile',
-      price: 18000,
+      price: 12000,
       description: 'New Model',
       canBuy: true,
       image: 'images/Mobile.png'
     }
   ]
 
-
-
-  // Event Handler(s)
-
-  currentTab = 1;
-
-  tabChange(event, tabIdx) {
-    this.currentTab = tabIdx;
-  }
-
-  isTabSelected(tabIdx) {
-    return this.currentTab === tabIdx;
+  addToCart(item) {
+    this.cart.push(item);
   }
 
 
-} 
+}

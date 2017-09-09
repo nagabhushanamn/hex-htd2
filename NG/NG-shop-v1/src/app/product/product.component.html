@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="col-xs-3 col-sm-3 col-md-3">
+		<img alt="" [src]="product.image" class="img-responsive">
+	</div>
+	<div class="col-xs-9 col-sm-9 col-md-9">
+		<span class="badge">{{idx}}</span>
+		<h4>{{product.name}}</h4>
+		<h5>{{product.price}}</h5>
+		<button (click)="handleBuyBtn()" *ngIf="product.canBuy" class="btn btn-danger">Buy</button>
+		<hr />
+		<section>
+			<ul class="nav nav-tabs">
+				<li [class.active]="isTabSelected(1)"><a (click)="changeTab(1)">Description</a></li>
+				<li [class.active]="isTabSelected(2)"><a (click)="changeTab(2)">Specification</a></li>
+				<li [ngClass]="{active:isTabSelected(3),other:true}"><a
+					(click)="changeTab(3)">Reviews</a></li>
+			</ul>
+			<div *ngIf="isTabSelected(1)" class="panel">{{product.description}}</div>
+			<div *ngIf="isTabSelected(2)" class="panel">Not Yet</div>
+			<div *ngIf="isTabSelected(3)" class="panel">None Yet</div>
+		</section>
+	</div>
+</div>
