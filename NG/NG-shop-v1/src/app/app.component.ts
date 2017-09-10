@@ -1,9 +1,11 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { ProductService } from './product.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: []
 })
 export class AppComponent {
 
@@ -14,36 +16,23 @@ export class AppComponent {
 
   cartFlag = false;
 
-  products = [
-    {
-      name: 'Laptop',
-      price: 120000,
-      discount: 20000,
-      currency: 'INR',
-      description: 'New Model',
-      makeDate: Date.now(),
-      canBuy: true,
-      image: 'images/Laptop.png',
-      reviews: [
-        {stars: '5', author: 'nag@gmail.com', comment: 'good one'},
-        {stars: '3', author: 'indu@gmail.com', comment: 'bad one'}
-      ]
-    },
-    {
-      name: 'Mobile',
-      price: 12000,
-      description: 'New Model',
-      makeDate: Date.now(),
-      canBuy: true,
-      currency: 'INR',
-      image: 'images/Mobile.png',
-      reviews: [
-        {stars: '5', author: 'nag@gmail.com', comment: 'good one'},
-        {stars: '3', author: 'indu@gmail.com', comment: 'bad one'}
-      ]
-    }
-  ]
+  products: any = []
 
+  // productService:ProductService
+  // constructor(productService:ProductService){
+  //   this.productService=productService;
+  // }
+
+  constructor(private productService: ProductService) { };
+
+  ngOnInit() {
+    this.productService.getProducts()
+      .subscribe((resp) => {
+        this.products = resp;
+      }, function (error) {
+        console.dir(error)
+      });
+  }
 
   showCart(flag) {
     this.cartFlag = flag;

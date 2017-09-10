@@ -1,0 +1,20 @@
+
+
+<nav class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" [routerLink]="['']">ng-App</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a [routerLink]="['']"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+			<li><a [routerLink]="['pm']">PM</a></li>
+		</ul>
+	</div>
+</nav>
+
+
+<div class="container">
+	<router-outlet></router-outlet>
+</div>
+
+

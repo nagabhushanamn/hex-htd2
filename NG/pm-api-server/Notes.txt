@@ -1,0 +1,45 @@
+
+
+
+back-end app using REST 
+-----------------------
+
+
+  resource
+  
+  	- Product ( id, name ,price , makeDate ,, description )
+  	
+  	
+  path: /api/products
+  
+  
+  ------------------------------------------------------------
+  
+  
+  Model:
+  
+  	- Product
+  	
+  Layers:
+  
+   - data/repository layer  ==> persisting logic ( JDBC | ORM F.w with JPA interface )
+   - service layer          ==> processing logic
+   - web layer              ==> HTTP logic  ( bcoz we r exposing REST API )
+   
+   ---------------------------------------------------------
+   
+   
+   F.W
+   
+     - spring  ==> application F.W
+     - Hibernate ==> JPA Provider
+     
+   --------------------------------------------  
+   
+   
+   
+   
+   
+   
+      	
+  	

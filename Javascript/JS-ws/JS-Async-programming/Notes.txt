@@ -1,0 +1,38 @@
+
+
+in .js-lang , we can execute functions in 2 ways
+
+//---------------------------------------------------
+
+way-1 : sync
+
+function f1(){}
+
+function f2(){
+    f1(); // sync.......
+}
+
+//---------------------------------------------------
+
+way-2: async
+
+
+.js-runtime, on event , event-handlers always execute async
+
+function f(){
+
+    //
+    setTimeout(function(){},5000);
+
+}
+
+
+and  using async  js. APIs also , we can execute function async
+
+
+1. Promise API  ( past of ES6 )
+2. RxJS  API    
+
+
+-----------------------------------------
+
