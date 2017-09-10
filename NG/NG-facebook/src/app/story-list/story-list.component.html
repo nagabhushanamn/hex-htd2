@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Story List</div>
+  <div class="panel-body">
+    <div class="list-group">
+      <div class="list-group-item" *ngFor="let story of list">
+        <app-story [story]="story"></app-story>
+      </div>
+    </div>
+  </div>
+</div>

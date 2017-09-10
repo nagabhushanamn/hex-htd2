@@ -1,0 +1,11 @@
+<div class="container">
+
+  <div class="page-header">my-facebook</div>
+
+  <button class="btn" (click)="toggleStoryForm()">{{isFormOpen?'Hide':'New Story'}}</button>
+  <hr/>
+  <app-story-form *ngIf="isFormOpen" (story)="handleNewStory($event)"></app-story-form>
+  <hr/>
+  <app-story-list [list]="storyList"></app-story-list>
+
+</div>

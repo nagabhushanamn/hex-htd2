@@ -1,0 +1,24 @@
+
+
+NG-Facebook
+-----------
+
+
+Step 1: Break The UI Into A Component Hierarchy
+
+   1. AppComponent
+       a. StoryForm
+       b. StoryList
+            i. Story
+
+Step 2: Build A Static Version in NG
+
+Step 3: Identify The Minimal (but complete) Representation Of UI State
+
+Step 4: Identify Where Your State Should Live
+
+Step 5: Add Inverse Data Flow
+---------------------------------------------------
+     
+
+        
