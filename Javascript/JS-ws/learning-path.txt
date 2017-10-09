@@ -1,0 +1,73 @@
+
+static web-page
+----------------
+
+- HTML
+- CSS
+
+   - bootstrap
+
+-------------------------------------------------------------
+
+
+JavaScript - lang
+-------------------
+
+    a. data-types
+    b. execution-context/scope
+    c. let & const keywords
+    d. functions
+    e. closures
+    f. context's owner ( this - keyword)
+        - static function-binding
+        - dynamic function-binding
+    g. inheritance
+    h. constraints js-objects
+    i. ES6 new features
+
+        - arrow function
+        - class syntax
+        - etc..
+
+    j. JS module standards
+
+        - commonJS
+        - ES6 modules / TS modules
+
+    k. Concurrency & Event-Loop model  
+
+    l. Async Programming in .js
+
+        - promise API
+        - RxJS
+
+    ---------------------------------------------------------  
+
+
+    TypeScript-lang
+
+        - 
+
+    ----------------------------------------------------------
+
+    Build-Tools
+
+        - grunt
+        - gulp
+        - webpack
+
+    ----------------------------------------------------------
+
+    small app with plain-js
+    small app with jquery
+
+    ---------------------------------------------------------
+
+    appln with New-Angular
+
+    ----------------------------------------------------------
+
+
+
+
+
