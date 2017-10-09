@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="page-header">{{title}}</div>
+  <span class="badge">{{cart.length}}</span> in cart |
+  <a (click)="showOrHideCart()" href="#" class="pull-right">{{isCartOpen?'Hide':'View'}} Cart</a>
+  <hr/>
+  
+  <!-- <app-view-cart [items]="cart"></app-view-cart> -->
+
+  <div class="panel panel-default" *ngIf="isCartOpen">
+    <div class="panel-heading"> Items in cart </div>
+    <div class="panel-body">
+      <div class="list-group-item" *ngFor="let item of cart">
+        {{item.name}} &mdash; {{item.price}}
+      </div>
+    </div>
+  </div>
+
+  <div *ngFor="let item of items" class="list-group-item">
+    <app-product [item]="item" (buy)="addToCart($event)"></app-product>
+  </div>
+
+</div>

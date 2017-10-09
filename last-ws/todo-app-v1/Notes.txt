@@ -1,0 +1,21 @@
+
+
+ Todo-app
+ ----------
+
+ use-cases
+ ------------
+ 
+    a. ADD_TODO
+    b. EDIT_TODO
+    c. DELETE_DODO
+    d. COMPLETE_TODO
+    f. COMPLETE_ALL
+    g. CLEAR_COMPLETED
+    h. VIEW_TODOS ( All | Active | Completed)
+
+----------------------------------------------------    
+
+{id:0,title:'',completed:false}
+
+----------------------------------------------------

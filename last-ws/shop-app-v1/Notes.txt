@@ -1,0 +1,101 @@
+
+
+what .js-lang can do on web-page in browser envi?
+
+
+
+ using browser provided APIs, 
+ can bring any dynamic content/behva to web-page
+
+
+ browser APIs ==> e.g  DOM, XHR , Timer , New HTML5 APIs ( w3c standards )
+
+
+using DOM 
+------------
+
+  --> can create,retreive,update,delete elements
+  --> can change element's text/html content
+  --> can change element's attributes/properties
+  --> can change element's style
+  --> can listen event(s) on elements
+  --> can validate form-fields before submit
+  ..........
+
+using XHR ( XML HttpRequest )
+-----------------------------
+
+  --> can send async http request to server
+
+using Timer
+-------------
+
+  - setTimeout 
+  - setInterval
+
+HTML5 API
+-----------
+
+  ref:
+
+  https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5    
+
+
+------------------------------------------------------------
+
+
+Limitations of plain-js ( your-code ) in front-end dev
+-----------------------------------------
+
+ --> browser compatability
+ --> memory management ( i.e DOM manipulation , cleaning un-used DOM elements)
+ --> performance 
+ --> data-binding is manual 
+ --> code organization is difficult
+ --> too much code for simple operations
+
+ -----------------------------------------------------------
+
+ using third-party .js lib & F.W
+
+
+
+ --> jQuery
+
+      adv
+      ----
+
+      ---> cross browser-support on DOM manipulation.
+
+ MVC/MVVM basd lib & F.Ws
+
+
+ --> knockout
+ --> backbone
+ --> marionet
+ --> Angular JS 
+ --> EmberJS
+
+   ....
+ UI components
+ --------------
+
+ --> Sencha EXT-JS ( commericial )
+ --> DOJO  
+
+ ------------------------------------------
+
+
+  w3c ==> web-component standard ( draft )
+
+
+
+   a. React.js  ==> UI component lib from Facebook
+   b. Angular   
+        ==> component based UI F.W
+   c. PolymerJS
+   .....
+
+   ---------------------------------------- 
+
+       

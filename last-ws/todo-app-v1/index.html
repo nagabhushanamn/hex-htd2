@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1 class="page-header">todos</h1>
+        <header class="alert alert-info">
+            <label for="new-todo"> Enter New Todo:</label>
+            <input id="new-todo" autofocus class="input-lg" size="50" />
+        </header>
+        <section class="">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row">
+                        <label class="col-md-4 col-sm-4">Item-1</label>
+                        <input type="checkbox" class="col-md-2 col-sm-2" />
+                        <button class="btn btn-sm col-md-1 col-sm-1">delete</button>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <label class="col-md-4 col-sm-4">Item-2</label>
+                        <input type="checkbox" class="col-md-2 col-sm-2" />
+                        <button class="btn btn-sm col-md-1 col-sm-1">delete</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <footer class="">
+            <ul class="nav nav-pills">
+                <li class="active"><a href>All</a></li>
+                <li><a href>Active</a></li>
+                <li><a href>Completed</a></li>
+            </ul>
+            <hr/>
+            <span class="badge">0</span> items left
+            <button class="btn btn-danger pull-right">clear completed</button>
+            <hr/>
+        </footer>
+
+
+
+    </section>
+
+</body>
+
+</html>

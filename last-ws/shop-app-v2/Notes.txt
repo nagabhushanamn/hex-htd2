@@ -1,0 +1,33 @@
+
+
+
+1. data-binding
+-------------------
+
+ a. interpolation binding( 1-way )
+
+     component's props ---> template
+
+     syntax:  {{prop/expression}}
+
+
+ b. property/attribute binding ( 1 way )
+
+    component's props ---> element's props
+
+    syntax : <component/element [props]="expression"  />
+
+c. event binding
+
+    syntax: <element (event-name)="handler($event)" /> 
+
+
+2. Directives
+------------------
+
+ a. component
+ b. structural-directives  
+
+     ==> will change structure of component's template   
+
+     e.g ngFor,ngIF,ngChoose,.....

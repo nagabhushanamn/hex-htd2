@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-xs-4 col-sm-3 col-md-3">
+    <img [src]="item.image" class="img-responsive" />
+  </div>
+  <div class="col-xs-8 col-sm-9 col-md-9">
+    <h4>{{item.name|uppercase}} <small>{{item.make_date|date:'yyyy'}}</small></h4>
+    <h5>{{item.price|priceDiscount:1000|currency:'INR':true}}</h5>
+    <button (click)="buyClickHandler()" *ngIf="item.canBuy" class="btn btn-primary btn-sm">buy</button>
+    <hr/>
+    <ul class="nav nav-tabs">
+      <li [class.active]="isTabSelected(1)"><a (click)="changeTabHandler($event,1)" href>Description</a></li>
+      <li [class.active]="isTabSelected(2)"><a (click)="changeTabHandler($event,2)" href>Specification</a></li>
+      <li [class.active]="isTabSelected(3)"><a (click)="changeTabHandler($event,3)" href>Reviews</a></li>
+    </ul>
+    <div class="panel" *ngIf="isTabSelected(1)">
+      <p>{{item.description}}</p>
+    </div>
+    <div class="panel" *ngIf="isTabSelected(2)">Not Yet</div>
+    <div class="panel" *ngIf="isTabSelected(3)">
+      <div class="alert alert-info" *ngFor="let review of item.reviews">
+        <span class="badge">{{review.stars}}</span> &mdash; {{review.author}}
+        <hr/>
+        <p>{{review.message}}</p>
+      </div>
+      <hr/>
+      <div class="col-xs-8 col-sm-8 col-md-8">
+          <div class="panel panel-default">
+              <div class="panel-heading"> Review Form </div>
+              <div class="panel-body">
+                <form [formGroup]="reviewForm" (submit)="addNewReview()">
+                    <div class="form-group">
+                      <label>stars</label>
+                      <select class="form-control" formControlName="stars">
+                        <option value="#">-select-</option>
+                        <option *ngFor="let n of [1,2,3,4,5]" [value]="n">{{n}}</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label>email</label>
+                      <input class="form-control" formControlName="author"/>
+                    </div>
+                    <div class="form-group">
+                      <label>message</label>
+                      <textarea class="form-control" formControlName="message"></textarea>
+                    </div>
+                    <button class="btn btn-primary">submit</button>
+                </form>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <pre>{{item|json}}</pre> -->
